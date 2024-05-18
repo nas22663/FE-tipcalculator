@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github]([[https://your-solution-url.com](https://github.com/nas22663/FE-tipcalculator)](https://github.com/nas22663/FE-tipcalculator))
-- Live Site URL: [Live]([[https://your-live-site-url.com](https://nas22663.github.io/FE-tipcalculator/)](https://nas22663.github.io/FE-tipcalculator/))
+- - Solution URL: [GITHUB](https://github.com/nas22663/FE-tipcalculator)
+- Live Site URL: [Live Site](https://nas22663.github.io/FE-tipcalculator/)
 
 ## My process
 
