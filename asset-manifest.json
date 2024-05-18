@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/FE-tipcalculator/static/css/main.e9d99e1c.css",
+    "main.js": "/FE-tipcalculator/static/js/main.70b4a375.js",
+    "static/media/logo.svg": "/FE-tipcalculator/static/media/logo.3cc0528bd46321d63d85702006069614.svg",
+    "static/media/icon-dollar.svg": "/FE-tipcalculator/static/media/icon-dollar.9f9be3534a9295a65957.svg",
+    "static/media/icon-person.svg": "/FE-tipcalculator/static/media/icon-person.65bfd20465dd1d2cb58c.svg",
+    "index.html": "/FE-tipcalculator/index.html",
+    "main.e9d99e1c.css.map": "/FE-tipcalculator/static/css/main.e9d99e1c.css.map",
+    "main.70b4a375.js.map": "/FE-tipcalculator/static/js/main.70b4a375.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e9d99e1c.css",
+    "static/js/main.70b4a375.js"
+  ]
+}
