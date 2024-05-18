@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- - Solution URL: [GITHUB](https://github.com/nas22663/FE-tipcalculator)
+- Solution URL: [GITHUB](https://github.com/nas22663/FE-tipcalculator)
 - Live Site URL: [Live Site](https://nas22663.github.io/FE-tipcalculator/)
 
 ## My process
