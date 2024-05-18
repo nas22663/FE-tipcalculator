@@ -1,0 +1,415 @@
+/* index.css */
+
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+
+/* Root variables for colors */
+:root {
+  --strong-cyan: hsl(172, 67%, 45%);
+  --very-dark-cyan: hsl(183, 100%, 15%);
+  --dark-grayish-cyan: hsl(186, 14%, 43%);
+  --grayish-cyan: hsl(184, 14%, 56%);
+  --light-grayish-cyan: hsl(185, 41%, 84%);
+  --very-light-grayish-cyan: hsl(189, 41%, 97%);
+  --white: hsl(0, 0%, 100%);
+  --selected: hsl(172, 61%, 77%);
+  --none: hsl(183, 78%, 24%);
+}
+
+/* Global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+}
+
+body {
+  background-color: var(--light-grayish-cyan);
+  color: var(--very-dark-cyan);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--white);
+  padding: 0 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 920px;
+  height: 481px;
+  margin: auto; /* Center the container within the main element */
+  position: relative; /* Add this */
+}
+
+.logo {
+  position: absolute; /* Change this to absolute */
+  top: -130px; /* Position the logo 80px above the container */
+  left: 50%; /* Center the logo horizontally */
+  transform: translateX(-50%); /* Adjust to truly center the logo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-section,
+.right-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left-section {
+  gap: 40px;
+  width: 379px;
+  height: 388px;
+}
+
+.right-section {
+  width: 413px;
+  height: 417px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  text-align: left;
+  width: 100%;
+}
+
+label p {
+  color: var(--grayish-cyan);
+  font-size: 13px;
+}
+
+.input-container {
+  position: relative;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+input[type="number"] {
+  width: 100%;
+  height: 48px;
+  padding: 10px 10px 10px 40px; /* Add left padding to make space for the icon */
+  border: 1px solid var(--light-grayish-cyan);
+  border-radius: 5px;
+  background-color: var(--very-light-grayish-cyan);
+  font-size: 24px;
+  color: var(--very-dark-cyan);
+  text-align: right;
+  -moz-appearance: textfield; /* Hide arrows in Firefox */
+}
+
+.input-wrapper input {
+  background-image: url("images/icon-dollar.svg");
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
+
+.invalid-input:focus,
+.invalid-input:hover {
+  border: 2px solid red;
+}
+
+.invalid-input {
+  border: 2px solid red !important;
+}
+
+.people-input {
+  position: relative;
+}
+.error-message {
+  color: red;
+  position: absolute;
+  top: 0;
+  left: 65%;
+}
+
+.people-input input {
+  background-image: url("images/icon-person.svg");
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; /* Hide arrows in Chrome, Safari, Edge, and Opera */
+}
+
+input[type="number"]:focus,
+input[type="number"]:hover {
+  outline: 2px solid var(--strong-cyan);
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--strong-cyan);
+  color: var(--white);
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: var(--dark-grayish-cyan);
+}
+
+.tip-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tip-buttons button {
+  width: 117px;
+  height: 48px;
+  background-color: var(--very-dark-cyan);
+  color: var(--white);
+  font-size: 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tip-buttons button:hover {
+  background-color: var(--selected);
+  color: var(--very-dark-cyan);
+}
+
+.tip-buttons input {
+  width: 117px;
+  height: 48px;
+  margin-top: 10px;
+}
+
+.custom-button {
+  background-color: var(--very-light-grayish-cyan) !important;
+  color: var(--dark-grayish-cyan) !important;
+}
+
+.selected {
+  background-color: var(--strong-cyan) !important;
+  color: var(--very-dark-cyan) !important;
+}
+
+.result {
+  text-align: center;
+  background-color: var(--very-dark-cyan);
+  color: var(--white);
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; /* Center inputs horizontally */
+}
+
+.result input {
+  text-align: right; /* Align text to the right */
+  font-size: 48px; /* Set font size to 48px */
+}
+
+.tip-amount-container {
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.tip-amount {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px; /* Space between tip-amount elements */
+  width: 100%;
+  max-width: 333px;
+  font-size: 16px;
+  align-items: center; /* Center inputs horizontally */
+  height: 71px;
+}
+
+.tip-amount:first-of-type {
+  margin-top: 40px; /* Space between first tip-amount and surrounding component */
+}
+
+.tip-amount input {
+  text-align: right; /* Align text to the right */
+  border: none;
+  background: none;
+  color: var(--strong-cyan);
+  font-size: 48px; /* Set font size to 48px */
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  outline: none;
+  width: auto; /* Allow the input width to adjust dynamically */
+  min-width: 100px; /* Set a minimum width */
+}
+
+.reset-button {
+  margin-bottom: 20px;
+  width: 333px;
+  height: 48px;
+  align-self: center; /* Center the reset button */
+}
+
+.reset-button button {
+  color: var(--very-dark-cyan);
+  background-color: var(--strong-cyan);
+}
+
+.reset-button button:hover {
+  background-color: var(--selected);
+}
+
+.none {
+  margin-bottom: 20px;
+  width: 333px;
+  height: 48px;
+  align-self: center;
+}
+
+.none button {
+  color: var(--very-dark-cyan);
+  background-color: var(--none);
+}
+
+@media (max-width: 375px) {
+  .container {
+    flex-direction: column;
+    width: 375px;
+    height: 789px;
+    align-items: center;
+    padding: 0;
+    margin-top: 100px;
+  }
+
+  .logo {
+    top: -80px; /* Adjust the position for the logo */
+  }
+
+  .left-section,
+  .right-section {
+    width: 311px;
+    align-items: center;
+  }
+
+  .left-section {
+    margin-top: 10px;
+    gap: 16px;
+    width: 311px;
+    height: 488px;
+    margin-bottom: 0;
+  }
+
+  .right-section {
+    width: 311px;
+
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .tip-buttons {
+    font-size: 24px;
+    display: grid;
+    grid-template-columns: repeat(2, 146px);
+    grid-gap: 10px;
+  }
+
+  .tip-buttons button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+  }
+
+  .tip-buttons input {
+    width: 146px;
+    height: 48px;
+  }
+
+  .result {
+    margin-bottom: 0;
+    width: 327px;
+    height: 257px;
+    padding: 10px;
+  }
+
+  .result input {
+    font-size: 32px;
+    margin-bottom: 0;
+  }
+
+  .tip .tip-amount-container {
+    width: 100%;
+    padding: 0 0;
+    box-sizing: border-box;
+  }
+  .tip-amount:first-of-type {
+    margin-top: 10px;
+  }
+
+  .tip-amount {
+    margin-bottom: 10px;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .tip-amount input {
+    font-size: 32px;
+  }
+
+  label {
+    font-size: 16px;
+  }
+
+  input[type="number"] {
+    font-size: 24px;
+  }
+
+  .tip-buttons button {
+    width: 146px;
+    height: 48px;
+    font-size: 24px;
+  }
+
+  .people-input {
+    width: 100%;
+  }
+
+  .reset-button,
+  .none {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .error-message {
+    font-size: 13px;
+    top: 0px;
+    right: 0;
+  }
+}
