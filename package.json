@@ -2,7 +2,7 @@
   "name": "tipcalculator",
   "version": "0.1.0",
   "private": "false",
-  "homepage": "https://nas22663.github.io/tipcalculator/",
+  "homepage": "https://nas22663.github.io/FE-tipcalculator/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",

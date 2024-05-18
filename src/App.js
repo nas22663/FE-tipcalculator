@@ -59,6 +59,7 @@ function BillInput({ setBill, bill }) {
       <label>Bill</label>
       <div className="input-wrapper">
         <input
+          label="Bill"
           value={bill}
           type="number"
           id="bill"
